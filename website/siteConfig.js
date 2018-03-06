@@ -6,18 +6,11 @@
  */
 
 /* List of projects/orgs using your project for the users page */
-const users = [
-  {
-    caption: "User1",
-    image: "/test-site/img/jsTestGen.png",
-    infoLink: "https://www.facebook.com",
-    pinned: true
-  }
-];
+const users = [];
 
 const siteConfig = {
   title: "JS Test Gen" /* title for your website */,
-  tagline: "Generate unit test boilerplate for your JS code",
+  tagline: "Generate unit test templates for your default/named exports.",
   url: "https://js-test-gen.github.io" /* your website url */,
   baseUrl: "/js-test-gen/" /* base url for your project */,
   projectName: "js-test-gen",
@@ -44,10 +37,7 @@ const siteConfig = {
     ]
   },*/
   // This copyright info is used in /core/Footer.js and blog rss/atom feeds.
-  copyright:
-    "Copyright © " +
-    new Date().getFullYear() +
-    " Your Name or Your Company Name",
+  copyright: "Copyright © " + new Date().getFullYear() + " Martin O'Grady",
   // organizationName: 'deltice', // or set an env variable ORGANIZATION_NAME
   // projectName: 'test-site', // or set an env variable PROJECT_NAME
   highlight: {

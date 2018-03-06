@@ -79,43 +79,22 @@ class HomeSplash extends React.Component {
         <div className="inner">
           <ProjectTitle />
           <PromoSection>
-            <Button href="#try">Download for Atom</Button>
-            <Button href="#try">Download for vscode</Button>
+            <Button href="https://atom.io/packages/js-test-gen-atom">
+              Download for atom <img src={imgUrl("Atom_editor_logo.svg")} />
+            </Button>
+            <Button href="https://marketplace.visualstudio.com/items?itemName=jsTestGen.js-test-gen-vscode">
+              Download for vscode
+              <img
+                style={{ width: "131px", height: "120px" }}
+                src={imgUrl("vscode_logo.svg")}
+              />
+            </Button>
           </PromoSection>
         </div>
       </SplashContainer>
     );
   }
 }
-
-const Block = props => (
-  <Container
-    padding={["bottom", "top"]}
-    id={props.id}
-    background={props.background}
-  >
-    <GridBlock align="center" contents={props.children} layout={props.layout} />
-  </Container>
-);
-
-const Features = props => (
-  <Block layout="fourColumn">
-    {[
-      {
-        content: "This is the content of my feature",
-        image: imgUrl("docusaurus.svg"),
-        imageAlign: "top",
-        title: "Feature One"
-      },
-      {
-        content: "The content of my second feature",
-        image: imgUrl("docusaurus.svg"),
-        imageAlign: "top",
-        title: "Feature Two"
-      }
-    ]}
-  </Block>
-);
 
 const FeatureCallout = props => (
   <div
@@ -134,75 +113,6 @@ const FeatureCallout = props => (
     </div>
   </div>
 );
-
-const LearnHow = props => (
-  <Block background="light">
-    {[
-      {
-        content: "Talk about learning how to use this",
-        image: imgUrl("docusaurus.svg"),
-        imageAlign: "right",
-        title: "Learn How"
-      }
-    ]}
-  </Block>
-);
-
-const TryOut = props => (
-  <Block id="try">
-    {[
-      {
-        content: "Talk about trying this out",
-        image: imgUrl("docusaurus.svg"),
-        imageAlign: "left",
-        title: "Try it Out"
-      }
-    ]}
-  </Block>
-);
-
-const Description = props => (
-  <Block background="dark">
-    {[
-      {
-        content: "This is another description of how this project is useful",
-        image: imgUrl("docusaurus.svg"),
-        imageAlign: "right",
-        title: "Description"
-      }
-    ]}
-  </Block>
-);
-
-const Showcase = props => {
-  if ((siteConfig.users || []).length === 0) {
-    return null;
-  }
-  const showcase = siteConfig.users
-    .filter(user => {
-      return user.pinned;
-    })
-    .map((user, i) => {
-      return (
-        <a href={user.infoLink} key={i}>
-          <img src={user.image} title={user.caption} />
-        </a>
-      );
-    });
-
-  return (
-    <div className="productShowcaseSection paddingBottom">
-      <h2>{"Who's Using This?"}</h2>
-      <p>This project is used by all these people</p>
-      <div className="logos">{showcase}</div>
-      <div className="more-users">
-        <a className="button" href={pageUrl("users.html", props.language)}>
-          More {siteConfig.title} Users
-        </a>
-      </div>
-    </div>
-  );
-};
 
 class Index extends React.Component {
   render() {

@@ -3,7 +3,7 @@
   "localized-strings": {
     "next": "Next",
     "previous": "Previous",
-    "tagline": "Generate unit test boilerplate for your JS code",
+    "tagline": "Generate unit test templates for your default/named exports.",
     "doc1": "Latin-ish",
     "Example Page": "Example Page",
     "doc2": "document number 2",
