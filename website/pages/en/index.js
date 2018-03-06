@@ -126,11 +126,11 @@ const FeatureCallout = props => (
       Generate Unit Test Templates From Existing JS Code
     </h2>
     <div style={{ textAlign: "center", margin: "0 auto", width: "70%" }}>
-      <img src="img/atom-gen-tests.gif" />
+      <img src={imgUrl("testFileGen.gif")} />
     </div>
     <h2 style={{ color: "white" }}>Generate Tests From Your Selections</h2>
     <div style={{ textAlign: "center", margin: "0 auto", width: "70%" }}>
-      <img src="img/atom-gen-tests.gif" />
+      <img src={imgUrl("selectionTestGen.gif")} />
     </div>
   </div>
 );
