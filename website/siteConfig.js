@@ -12,7 +12,7 @@ const siteConfig = {
   title: "JS Test Gen" /* title for your website */,
   tagline: "Generate unit test templates for your default/named exports.",
   url: "https://js-test-gen.github.io" /* your website url */,
-  baseUrl: "/js-test-gen/" /* base url for your project */,
+  baseUrl: "/" /* base url for your project */,
   projectName: "js-test-gen",
   headerLinks: [{ href: "https://github.com/js-test-gen", label: "GitHub" }],
   users,
@@ -25,17 +25,6 @@ const siteConfig = {
     primaryColor: "#2B2121",
     secondaryColor: "#987E7E"
   },
-  /* custom fonts for website */
-  /*fonts: {
-    myFont: [
-      "Times New Roman",
-      "Serif"
-    ],
-    myOtherFont: [
-      "-apple-system",
-      "system-ui"
-    ]
-  },*/
   // This copyright info is used in /core/Footer.js and blog rss/atom feeds.
   copyright: "Copyright © " + new Date().getFullYear() + " Martin O'Grady",
   organizationName: "js-test-gen", // or set an env variable ORGANIZATION_NAME
@@ -46,7 +35,7 @@ const siteConfig = {
   },
   scripts: ["https://buttons.github.io/buttons.js"],
   // You may provide arbitrary config keys to be used as needed by your template.
-  repoUrl: "https://github.com/js-test-gen"
+  repoUrl: "https://github.com/js-test-gen/js-test-gen.github.io"
 };
 
 module.exports = siteConfig;
